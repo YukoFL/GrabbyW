@@ -1,11 +1,6 @@
-Error was on 
-  328 |           {tab === 1 && hasAirports && (
-  329 |             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-> 330 |               {d.airports.map((a, i) => (
+UPDATE: Issue founded this was a corrupted file 
+During my submission on 9.40~ I was having trouble using git as my originally GitHub https://github.com/YukoFL/Grabby come to a problem in which the commit file was sub committing so i asked help in which i got the command force delete rm THAT DELETED MY ENTIRE FILE SO ITS ALLL GONEEEEEEEE since i have 15 minute left to submit i go panic and use one of the idea file i have and just backup it since i deleted those already then put the code in and make the GitHub as the results its ENTIRELY BROKEN AND CORRUPTED WHICH IS WHY THE ENTIRE THING CRASHED MY LAPTOP YES FULLY CRASHED MY LAPTOP 
 
-No matter how much i try changing so it work on Vercel it refused to actually change it 
+SOLUTION i need to make a new tailwind file and recode it again to solve it unfortunately...
 
-{(d as any).airports.map((a: any, i: number) => (
-i change it to this but still refused to change the code in git  so still broken
-
-I GIVE UP RAHHH I GIVEEE UPP
+I did stream my results to my friend while also trying to help them make it so there that...
