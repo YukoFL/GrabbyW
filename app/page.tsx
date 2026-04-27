@@ -327,7 +327,7 @@ function ServiceModal({
 
           {tab === 1 && hasAirports && (
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-              {d.airports.map((a, i) => (
+             {(d as any).airports.map((a: any, i: number) => (
                 <div
                   key={i}
                   style={{
