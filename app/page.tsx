@@ -111,12 +111,12 @@ const services = [
 ];
 
 const reviews = [
-  { name: "Artoria", city: "Camelot", avatar: "AR", rating: 5, text: "GrabFood has helped me a lotI’m basically hungry all the time. Whenever I’m running low on food (which is… often), I end up ordering multiple portions of rice Honestly, without GrabFood, I’d probably be in a constant state of “what do I eat now?” panic. It’s been a lifesaver", service: "GrabFood" },
-  { name: "Perlica", city: "Dijang", avatar: "PE", rating: 5, text: "Quick, efficient, and wonderful I use it to travel between Dijang and Wuling because Tang Tang keeps messing up one of our sub-packs, and I still have a lot of work to handle in Dijang. Overall, it’s been great.", service: "GrabCar" },
-  { name: "Roland", city: "District 9", avatar: "RO", rating: 5, text: "Haha, I’ve been pretty busy with fixer work lately, while my wife takes care of our baby. I constantly need to send baby supplies to her from another district, so this service has been incredibly helpful. Honestly, it’s been wonderful and makes everything so much easier.", service: "GrabExpress" },
-  { name: "Phainon", city: "Aedes Elysiae", avatar: "PH", rating: 5, text: "Honestly, I’ve had quite a bit of trouble with payments since I keep losing my wallet Cypher is always messing with me. That’s why, when I found out I could secure my money without the risk of it being stolen, I felt incredibly relieved. Thanks, GrabPay!", service: "GrabPay" },
-  { name: "Gojo", city: "Kyoto", avatar: "GJ", rating: 5, text: "Wonderful service it gets me around with hardly any delays. That’s exactly why I’ll be relying on it for an important event in Shinjuku. Overall, really good service.", service: "GrabTravel" },
-  { name: "Shiroko", city: "Abyddos", avatar: "SH", rating: 4, text: "Sensei has been very hungry lately, and I haven’t been able to properly cook his daily meals. That’s why I’ve been relying on GrabFood to make sure he still gets the nutrients he needs. I’m really grateful that I can continue taking care of him this way.", service: "GrabFood" },
+  { name: "Artoria", city: "Camelot", avatar: "PH", rating: 5, text: "GrabFood has completely changed how I eat. I order lunch from my favourite nasi padang place every day and it arrives hot in under 30 minutes. The GrabRewards points add up fast too!", service: "GrabFood" },
+  { name: "Perlica", city: "Dijang", avatar: "PE", rating: 5, text: "JustGrab is incredible for morning commutes. I book it from my condo lobby and by the time I reach the road, the car is already there. The upfront pricing means no bill shock at all.", service: "GrabCar" },
+  { name: "Roland", city: "District 9", avatar: "RO", rating: 5, text: "I run a small online business and GrabExpress has been a game changer. Same-day delivery, real-time tracking, and the insurance option gives me total peace of mind for valuable items.", service: "GrabExpress" },
+  { name: "Phainon", city: "Aedes Elysiae", avatar: "TN", rating: 5, text: "GrabPay has replaced my physical wallet completely. I pay for everything now, from my morning coffee to my monthly bills. The PayLater feature is so convenient for bigger purchases.", service: "GrabPay" },
+  { name: "Gojo", city: "Kyoto", avatar: "SR", rating: 5, text: "Booked a GrabCar Premium for my airport transfer and it was flawless. The driver was waiting at arrivals with my name on a card. Felt like a proper business class experience end-to-end.", service: "GrabTravel" },
+  { name: "Kevin Tan", city: "Penang", avatar: "KT", rating: 4, text: "GrabMart delivers groceries faster than I can walk to the minimart. Fresh produce, snacks, everything. I use it almost daily now. The Grab app really does run my whole life at this point.", service: "GrabFood" },
 ];
 
 const stats = [
@@ -327,7 +327,7 @@ function ServiceModal({
 
           {tab === 1 && hasAirports && (
             <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-             {(d as any).airports.map((a: any, i: number) => (
+              {d.airports.map((a, i) => (
                 <div
                   key={i}
                   style={{
@@ -1011,7 +1011,7 @@ function Footer() {
         </div>
 
         <div style={{ borderTop: "1px solid #1a1a1a", paddingTop: 28, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-          <div style={{ color: "#444", fontSize: 13 }}>2025 Grab Holdings Inc. All rights reserved to SilverWolf Lv 999.</div>
+          <div style={{ color: "#444", fontSize: 13 }}>2025 Grab Holdings Inc. All rights reserved.</div>
           <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
             {["Privacy Policy", "Terms of Use", "Cookie Policy"].map((l) => (
               <span key={l} style={{ color: "#444", fontSize: 13, cursor: "pointer" }}>
